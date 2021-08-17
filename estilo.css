@@ -8,6 +8,12 @@ body{
     background-size: 100%;
 }
 
+@media only screen and (max-width: 1041px) {
+    body {
+        background-size: unset
+    }
+  }
+
 .panel{
     position: absolute;
     width: 190px;
