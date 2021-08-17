@@ -1,4 +1,4 @@
-/** Declaração Variaveis Globais*/
+/** Declaração Variaveis*/
 
 
 var heightW = 0;
