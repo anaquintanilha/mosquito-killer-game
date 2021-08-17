@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mosquito Killer</title>
+
+  <link rel="stylesheet" href="estilo.css">
+
+  <script src="game.js"></script>
+   
+</head>
+
+<body onresize="windowsVariation()">
+
+
+    <div class="panel">
+        <div class="lifes">
+            <img id="l1" src="imagens/coracao_cheio.png">
+            <img id="l2" src="imagens/coracao_cheio.png">
+            <img id="l3" src="imagens/coracao_cheio.png">
+
+        </div>
+        <div class="stopwatch">
+            Timer : <span id="timer"></span>
+        </div>
+    </diV>
+    
+    <script>
+        document.getElementById('timer').innerHTML = time;
+        var createMosquito = setInterval(function(){
+            newCoordenates()}, 1000);
+    </script>
+</body>
+
+</html>
