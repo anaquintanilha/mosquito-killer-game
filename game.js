@@ -1,6 +1,5 @@
 /** Declaração Variaveis*/
 
-
 var heightW = 0;
 var widthW = 0;
 
