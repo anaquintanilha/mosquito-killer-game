@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+  <script>
+      function iniciarJogo(){
+          var level= document.getElementById('level').value;
+          if(level == ''){
+              alert('You need to select a level!');
+              return false;
+          }
+
+          window.location.href = "game.html?" + level;
+
+      }
+
+  </script>
    
 </head>
 
@@ -26,8 +39,8 @@
             <div class= "col">
                 <div class="d-flex justify-content-center">
                     <div class="mb-2">
-                        <select class="form-control">
-                            <option value="">Select the level</option>
+                        <select class="form-control" id="level">
+                            <option value="">Select the level here</option>
                             <option value="easy">Easy</option>
                             <option value="normal">Normal</option>
                             <option value="hard">Hard</option>
@@ -40,7 +53,7 @@
         <div class=" row">
             <div class= "col">
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-danger btn-lg" onclick="window.location.href='game.html'">Begin</button>
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Begin</button>
                     
                 </div>
             </div>

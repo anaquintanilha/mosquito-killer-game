@@ -13,6 +13,20 @@ var lifes = 3;
 
 var time = 20;
 
+var level = window.location.search;
+level = level.replace('?', '');
+
+var mosquitoTime = 1500;
+
+if(level === 'easy' ){
+    mosquitoTime = 1500;
+} 
+else if(level === 'normal' ){
+    mosquitoTime = 1000;
+}
+else if(level === 'hard' ){
+    mosquitoTime = 750;
+}
 
 /** Declaração Funções*/
 
